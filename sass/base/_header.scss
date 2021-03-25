@@ -1,3 +1,6 @@
+header {
+    border-bottom: 1px solid #ECECEC;
+    }
 .logo {
     font-family: Raleway;
     font-weight: bold;
@@ -8,13 +11,12 @@
 }
 .logo-second-part {
     font-weight: bold;
-    color: var(--accent-color);
+    color: #000;
 }
 .navigation-class, .navigation-link, .container-navigation-items, .navigation {
     display: flex;
     align-items: center;
 }
-
 .menu-item, .nav-link, .nav-tel-link {
     font-style: normal;
     font-weight: 500;
@@ -22,7 +24,6 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
-
 .menu-item  {
     position: relative;
     padding: 28px 0;
@@ -31,7 +32,6 @@
 .menu-item:focus {
     color: var(--primary-color);
 }
-
 
 .menu-item.active::before  {
     position: absolute;
@@ -43,27 +43,19 @@
     top: 100%;
     left: 0;
 }
-
 .navigation-class {
     margin: 32px 0 32px 93px;
     list-style: none;
 }
-
 .port, .contacts {
     margin-left: 50px;
+
 }
 .navigation-link {
     margin-left: auto;
     list-style: none;
     align-items: center;
 }
-.port-item{
-    color: #2196F3;
-}
-.studio-item, .contacts-item{
-    color: black;
-}
-
 .icon-envelope {
     display: inline-block;
     margin-right: 10px;
@@ -73,10 +65,6 @@
     fill: var(--secondary-color);
     background-size: cover;
 }
-
-.mail:hover .icon-envelope{
-    fill: #2196F3;
-}
 .icon-telefone {
     display: inline-block;
     margin-right: 10px;
@@ -84,11 +72,16 @@
     width: 10px;
     height: 16px;
     margin-bottom: -3px;
-    fill: #757575;
+    fill: var(--secondary-color);
     background-size: cover;
-    
+}
+.mail:hover .icon-envelope{
+    fill: var(--primary-color);
 }
 
+.tel:hover .icon-telefone {
+    fill:var(--primary-color);
+}
 .nav-link {
     
     font-style: normal;
@@ -100,7 +93,7 @@
 }
 .nav-link:hover,
 .nav-link:focus {
-    color: var(--secondary-color);
+    color: var(--primary-color);
 }
 .tel    {
     display: flex;
@@ -122,42 +115,13 @@
 .nav-tel-link:focus {
     color: var(--primary-color);
 }
-.logo-last {
-    font-family: Ralewey;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    text-decoration: none;
-    color: var(--primary-color);
-    display: block;
-    margin-bottom: 20px ;
-}
-.mail:hover .icon-envelope{
-    fill: var(--primary-color);
+
+.tele-icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    fill: var(--back-color);
+    background-color: transparent;
 }
 
 
-.tel:hover .icon-telefone {
-    fill: var(--primary-color);
-}
-.foot-mail {
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 1.71;
-    color: rgba(255, 255, 255, 0.6);
-}
-.foot-tel {
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 1.71;    
-
-    color: rgba(255, 255, 255, 0.6);
-
-}
-.logo-second {
-font-weight: bold;
-font-size: 26px;
-line-height: 1.19;
-color: #FFFFFF;
-}
