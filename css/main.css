@@ -456,7 +456,7 @@ header {
 }
 
 .menu-item.active {
-  color: var(--primary-color);
+  color: #2196F3;
 }
 
 .menu-item {
@@ -465,7 +465,7 @@ header {
 
 .menu-item:hover,
 .menu-item:focus {
-  color: var(--primary-color);
+  color: #2196F3;
 }
 
 .menu-item.active::before {
