@@ -28,10 +28,17 @@ header {
     position: relative;
     padding: 28px 0;
 }
+.menu-item.active{
+    color: var(--primary-color);
+}
+.menu-item{
+    color: black;
+}
 .menu-item:hover,
 .menu-item:focus {
     color: var(--primary-color);
 }
+
 
 .menu-item.active::before  {
     position: absolute;
